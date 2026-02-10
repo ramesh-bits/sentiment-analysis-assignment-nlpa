@@ -51,7 +51,11 @@ user_text = st.text_area("Enter text here:")
 uploaded_file = st.file_uploader("Or upload a .txt file", type=["txt"])
 
 if uploaded_file is not None:
-    user_text = uploaded_file.read().decode("utf-8")
+    # Check file size limit (1MB = 1048576 bytes)
+    if uploaded_file.size > 1048576:
+        st.error("File size exceeds 1MB limit. Please upload a smaller file.")
+    else:
+        user_text = uploaded_file.read().decode("utf-8")
 
 if st.button("Analyze Sentiment"):
     if user_text.strip() == "":
