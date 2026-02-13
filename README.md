@@ -30,6 +30,10 @@ cd sentiment-analysis-assignment-nlpa
 ```bash
 pip install -r requirements.txt
 ```
+or
+```bash
+pip3 install -r requirements.txt
+```
 
 ## Usage
 
@@ -69,6 +73,10 @@ Uses VADER (Valence Aware Dictionary and sEntiment Reasoner) which is specifical
 - Tokenizes the text into words
 - Stems words using Porter Stemmer algorithm
 
-## Author
-
-NLPA Assignment - Sentiment Analysis
+## Assignment Group - 38
+Members :
+1. Reddy Mallikarjuna Gowd - 2024AB05102
+2. Parnika Kansal - 2024AB05106
+3. More Rakeshkumar Arjun - 2024AB05104
+4. Shivakumara H - 2024AB05105
+5. Ramesh Gehlot - 2024AA05599
